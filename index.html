@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Resume and Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+
+    <!-- Slick Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <!-- Slick JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1><a href="index.html">John Doe</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="active">
+        <div class="container">
+            <h2>Software Engineer</h2>
+            <p>Passionate about creating high-quality, scalable web applications</p>
+            <a href="#portfolio" class="btn">View Portfolio</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="employee2.jpg" alt="Profile Picture">
+                </div>
+                <div class="col-md-6">
+                    <h2>About Me</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod varius massa, ut feugiat quam eleifend ut. Sed euismod enim at eros auctor, eget imperdiet elit venenatis.</p>
+                    <p>Maecenas accumsan euismod nisi, ut pellentesque sapien condimentum at. Integer finibus laoreet elit, ut semper libero pharetra non. Sed ac odio vel metus viverra elementum eget id lorem.</p>
+                    <p>Fusce euismod augue at nisl tristique, et efficitur erat lacinia. Nullam vel massa a ipsum dignissim consequat. Sed in vestibulum lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    <p>Suspendisse auctor, justo vel varius interdum, ipsum diam tincidunt ligula, sed cursus ex dui eu mauris. Fusce laoreet libero eget erat tempus, ac malesuada velit porta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="slider">
+                <div>
+                    <div class="slider-img"> <img src="project1.jpg" alt="Project 1">
+                    </div>
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod varius massa, ut feugiat quam eleifend ut. Sed euismod enim at eros auctor, eget imperdiet elit venenatis.</p>
+                </div>
+                <div>
+                    <div class="slider-img"> <img src="project2.jpg" alt="Project 2"></div>
+                    <h3>Project 2</h3>
+                    <p>Maecenas accumsan euismod nisi, ut pellentesque sapien condimentum at. Integer finibus laoreet elit, ut semper libero pharetra non. Sed ac odio vel metus viverra elementum eget id lorem.</p>
+                </div>
+                <div>
+                    <div class="slider-img"> <img src="project3.jpg" alt="Project 3"></div>
+                    <h3>Project 3</h3>
+                    <p>Fusce euismod augue at nisl tristique, et efficitur erat lacinia. Nullam vel massa a ipsum dignissim consequat. Sed in vestibulum lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                </div>
+                <div>
+                    <div class="slider-img"> <img src="project4.jpg" alt="Project 4"></div>
+                    <h3>Project 4</h3>
+                    <p>Suspendisse auctor, justo vel varius interdum, ipsum diam tincidunt ligula, sed cursus ex dui eu mauris. Fusce laoreet libero eget erat tempus, ac malesuada velit porta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 John Doe. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- floating button -->
+    <button id="scroll-up-btn" title="Scroll to Top"><i class="fas fa-arrow-up"></i></button>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

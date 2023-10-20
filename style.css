@@ -1,0 +1,401 @@
+/* General Styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #666;
+}
+
+
+/* section ease in  */
+
+section {
+    padding: 50px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+section.active {
+    opacity: 1;
+}
+
+
+/* floating button */
+
+button#scroll-up-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+button#scroll-up-btn:hover {
+    opacity: 1;
+}
+
+
+/* Header Styles */
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+header h1 {
+    float: left;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+header nav {
+    float: right;
+    margin: 20px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header ul li {
+    margin-left: 30px;
+}
+
+header ul li a {
+    font-size: 18px;
+}
+
+
+/* Hero Section Styles */
+
+#hero {
+    background-image: url('header.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+
+/* About Section Styles */
+
+#about {
+    background-color: #f6f6f6;
+    padding: 80px 0;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+/* Portfolio Section Styles */
+
+#portfolio {
+    padding: 80px 0;
+}
+
+#portfolio h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.slider {
+    margin: 0 -15px;
+}
+
+.slider div {
+    padding: 0 15px;
+}
+
+.slick-initialized .slick-slide {
+    overflow: hidden;
+}
+
+.slider img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.slider-img {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slider h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.slider p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* Contact Section Styles */
+
+#contact {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+#contact h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.form-group textarea {
+    height: 200px;
+}
+
+button[type="submit"].btn {
+    margin-top: 20px;
+    width: 80%;
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    font-size: 24px;
+    color: #fff;
+}
+
+footer nav ul {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    #hero h2,
+    #hero p {
+        text-align: right;
+        padding-right: 15px;
+        float: right
+    }
+    #hero h2 {
+        font-size: 40px;
+        margin-top: 330px;
+    }
+    #hero p {
+        font-size: 20px;
+    }
+    #hero a {
+        float: right;
+    }
+    #hero {
+        background-position: right;
+        background-size: cover;
+        height: 124vh;
+    }
+    header nav {
+        float: unset;
+    }
+    header h1 {
+        float: unset;
+        text-align: center;
+    }
+    .slider div {
+        padding: 0 2px;
+    }
+    .slider-img {
+        width: unset;
+        height: unset;
+    }
+    .slider h3 {
+        font-size: 18px
+    }
+    .slider p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #hero {
+        background-position: right;
+    }
+    #hero p {
+        width: 80%;
+    }
+    #hero .container {
+        margin-top: 300px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #hero {
+        background-position: right;
+    }
+    #hero p {
+        width: 80%;
+    }
+    #hero .container {
+        margin-top: 300px;
+    }
+    header ul {
+        margin-right: 20px;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #hero {
+        padding: 0;
+        height: 100vh;
+    }
+    #hero h2 {
+        margin-top: unset;
+    }
+    button#scroll-up-btn {
+        right: 30px;
+    }
+}
